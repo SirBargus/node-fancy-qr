@@ -1,15 +1,17 @@
 {
 	"name": "fancyqr",
 	"description": "Create QR code with logo or a change of color.",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"dependencies": {
 		"qrcode": ">= 0.2.10"
 	},
 	"main": "lib/fancyqr.js",
 	"author": "heartnetkung <heartnetkung@gmail.com>",
 	"homepage": "https://github.com/heartnetkung/node-fancy-qr",
+	"fork_author": "Agustin Navarro Torers, (@SirBargus)",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/heartnetkung/node-fancy-qr.git"
+		"url": "https://github.com/heartnetkung/node-fancy-qr.git",
+		"url_fork": "https://github.com/SirBargus/node-fancy-qr"
 	}
 }

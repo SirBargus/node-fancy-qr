@@ -1,10 +1,14 @@
-var fancyQR = require('../lib/fancyqr');
-fancyQR.save(__dirname + '/out.png', 'hello world!', {
-	r: 237,
-	g: 127,
-	b: 38,
-	logoPath: __dirname + '/logo.png'
-}, function(err) {
-	console.log(err);
-	console.log('done');
+var qr = require('../lib/fancyqr.js'),
+    fs = require('fs');
+
+var logo = fs.readFileSync('logo.png');
+
+qr.save('hello world',{
+    r: 237,
+    g: 127,
+    b: 38,
+    err: 'max',
+    logoPath: logo
+}, function(err, buf){
+    fs.writeFileSync('test_2.png', buf, 'binary');
 });
